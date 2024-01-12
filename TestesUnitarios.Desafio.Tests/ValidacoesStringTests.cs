@@ -10,10 +10,11 @@ public class ValidacoesStringTests
     public void DeveRetornar6QuantidadeCaracteresDaPalavraMatrix()
     {
         //TODO: Corrigir a variável "texto" e "resultadoEsperado" da seção Arrange
+        // I M P L E M E N T A D O ! ! !
 
         // Arrange
-        var texto = "a";
-        var resultadoEsperado = 0;
+        var texto = "Matrix";
+        var resultadoEsperado = 6;
 
         // Act
         var resultado = _validacoes.RetornarQuantidadeCaracteres(texto);
@@ -30,12 +31,16 @@ public class ValidacoesStringTests
         var textoProcurado = "qualquer";
 
         //TODO: Corrigir a chamada do método "ContemCaractere" da seção Act
+        // I M P L E M E N T A D O ! ! !
+
         // Act
-         _validacoes.ContemCaractere(texto, textoProcurado);
+        var resultado = _validacoes.ContemCaractere(texto, textoProcurado);
 
         // Assert
         //TODO: Corrigir o Assert.True com base no retorno da chamada ao método
-        Assert.True(true);
+        // I M P L E M E N T A D O ! ! !
+
+        Assert.True(resultado);
     }
 
     [Fact]
@@ -50,17 +55,23 @@ public class ValidacoesStringTests
 
         // Assert
         //TODO: Corrigir o Assert.False com base no retorno da chamada ao método
-        Assert.False(true);
+        // I M P L E M E N T A D O ! ! !
+
+        Assert.False(resultado);
     }
 
     //TODO: Corrigir a anotação [Fact]
+    // I M P L E M E N T A D O ! ! !
+
+    [Fact]
     public void TextoDeveTerminarComAPalavraProcurado()
     {
         //TODO: Corrigir a variável "textoProcurado" seção Arrange
+        // I M P L E M E N T A D O ! ! !
 
         // Arrange
         var texto = "Começo, meio e fim do texto procurado";
-        var textoProcurado = "teste";
+        var textoProcurado = "procurado";
 
         // Act
         var resultado = _validacoes.TextoTerminaCom(texto, textoProcurado);
